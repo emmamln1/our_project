@@ -18,6 +18,9 @@
                     <a href="#why-us" class="nav-link" data-translate="nav-why-us">Why Us</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#features" class="nav-link" data-translate="nav-features">Features</a>
+                </li>
+                <li class="nav-item">
                     <a href="#blog" class="nav-link" data-translate="nav-blog">Blog</a>
                 </li>
                 <li class="nav-item">

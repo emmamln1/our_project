@@ -12,6 +12,7 @@ class LanguageController {
             en: {
                 'nav-about': 'About Us',
                 'nav-why-us': 'Why Us',
+                'nav-features': 'Features',
                 'nav-blog': 'Blog',
                 'nav-projects': 'Our Projects',
                 'nav-reviews': 'Reviews',
@@ -20,6 +21,7 @@ class LanguageController {
             ru: {
                 'nav-about': 'О нас',
                 'nav-why-us': 'Почему мы',
+                'nav-features': 'Возможности',
                 'nav-blog': 'Блог',
                 'nav-projects': 'Наши проекты',
                 'nav-reviews': 'Отзывы',
@@ -28,6 +30,7 @@ class LanguageController {
             hy: {
                 'nav-about': 'Մենք',
                 'nav-why-us': 'Ինչու մենք',
+                'nav-features': 'Հնարավորություններ',
                 'nav-blog': 'Բլոգ',
                 'nav-projects': 'Մեր նախագծերը',
                 'nav-reviews': 'Կարծիքներ',
