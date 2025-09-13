@@ -4,10 +4,7 @@
        
         <div class="logo-section">
             <a href="#home" class="logo-link">
-                <div class="logo-content">
-                    <h1 class="logo-text" data-translate="logo">LandingCraft Pro</h1>
-                    <div class="logo-glow"></div>
-                </div>
+                <img src="assets/images/logo.png" alt="LandingCraft Pro" class="logo-img">
             </a>
         </div>
 

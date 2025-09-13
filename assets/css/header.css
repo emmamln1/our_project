@@ -29,18 +29,17 @@
 }
 
 .header-container {
-    max-width: 1400px;
+    max-width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: relative;
+    /* position: relative; */
 }
 
-/* Logo Section with Glow */
+/* Logo Section */
 .logo-section {
     flex-shrink: 0;
-    position: relative;
 }
 
 .logo-link {
@@ -49,48 +48,14 @@
     transition: transform var(--transition-fast);
 }
 
-.logo-content {
-    position: relative;
+.logo-img {
+    height: 40px;
+    width: auto;
     transition: all var(--transition-medium);
 }
 
-.logo-text {
-    font-size: 1.6rem;
-    font-weight: 800;
-    background: var(--cyber-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    transition: all var(--transition-medium);
-    position: relative;
-    z-index: 2;
-}
-
-.logo-glow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--cyber-gradient);
-    opacity: 0;
-    border-radius: 8px;
-    filter: blur(15px);
-    z-index: 1;
-    transition: opacity var(--transition-medium);
-}
-
-.logo-link:hover .logo-content {
+.logo-link:hover .logo-img {
     transform: scale(1.05);
-}
-
-.logo-link:hover .logo-glow {
-    opacity: 0.4;
-    animation: pulseGlow 2s infinite;
-}
-
-.logo-link:hover .logo-text {
-    animation: neonGlow 2s infinite;
 }
 
 /* Navigation Menu with Responsive Font Sizing */
