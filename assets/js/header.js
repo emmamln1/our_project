@@ -4,7 +4,6 @@ class HeaderController {
         this.header = document.getElementById('header');
         this.mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         this.mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-        this.mobileMenuClose = document.querySelector('.mobile-menu-close');
         this.navLinks = document.querySelectorAll('.nav-link');
         this.mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
         this.sections = document.querySelectorAll('.section');
@@ -116,10 +115,6 @@ class HeaderController {
             this.toggleMobileMenu();
         });
         
-        this.mobileMenuClose.addEventListener('click', (e) => {
-            e.preventDefault();
-            this.closeMobileMenu();
-        });
         
         this.mobileMenuOverlay.addEventListener('click', (e) => {
             if (e.target === this.mobileMenuOverlay) {

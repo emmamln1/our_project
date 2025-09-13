@@ -80,10 +80,6 @@
                 <div class="mobile-logo">
                     <h2 class="logo-text" data-translate="logo">LandingCraft Pro</h2>
                 </div>
-                <button class="mobile-menu-close" aria-label="Close mobile menu">
-                    <span class="close-line"></span>
-                    <span class="close-line"></span>
-                </button>
             </div>
             <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
                 <ul class="mobile-nav-list">
