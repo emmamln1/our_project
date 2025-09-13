@@ -10,7 +10,6 @@ class LanguageController {
         
         this.translations = {
             en: {
-                'logo': 'LandingCraft Pro',
                 'nav-about': 'About Us',
                 'nav-why-us': 'Why Us',
                 'nav-blog': 'Blog',
@@ -19,7 +18,6 @@ class LanguageController {
                 'nav-contact': 'Contact',
             },
             ru: {
-                'logo': 'LandingCraft Pro',
                 'nav-about': 'О нас',
                 'nav-why-us': 'Почему мы',
                 'nav-blog': 'Блог',
@@ -28,7 +26,6 @@ class LanguageController {
                 'nav-contact': 'Контакты',
             },
             hy: {
-                'logo': 'LandingCraft Pro',
                 'nav-about': 'Մենք',
                 'nav-why-us': 'Ինչու մենք',
                 'nav-blog': 'Բլոգ',

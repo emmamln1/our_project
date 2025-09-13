@@ -317,9 +317,6 @@
     border-bottom: 1px solid rgba(88, 30, 184, 0.3);
 }
 
-.mobile-logo .logo-text {
-    font-size: 1.4rem;
-}
 
 .mobile-menu-close {
     background: transparent;
@@ -478,9 +475,6 @@
         padding: 0 20px;
     }
     
-    .logo-text {
-        font-size: 1.4rem;
-    }
 }
 
 @media (max-width: 480px) {
@@ -492,9 +486,6 @@
         padding: 0 15px;
     }
     
-    .logo-text {
-        font-size: 1.2rem;
-    }
 }
 
 /* Header Focus Styles for Keyboard Navigation */
