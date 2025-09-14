@@ -817,8 +817,145 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>Ready to build the future together?</p>
+                <div class="contact-header">
+                    <h2 class="section-title" data-lang-key="contact.title">Կապ Մեզ Հետ</h2>
+                    <p class="section-subtitle" data-lang-key="contact.subtitle">Պատրա՞ստ եք միասին կառուցել ապագան</p>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- Left Side - 3D Credit Card Style Contact Info -->
+                    <div class="contact-info-side">
+                        <div class="contact-card-container">
+                            <div class="contact-card">
+                                <div class="card-background">
+                                    <div class="card-pattern"></div>
+                                    <div class="card-glow"></div>
+                                </div>
+                                
+                                <div class="card-content">
+                                    <div class="card-header">
+                                        <div class="company-logo">
+                                            <span class="logo-text">LandingCraft</span>
+                                            <span class="logo-subtitle">Pro</span>
+                                        </div>
+                                        <div class="card-chip"></div>
+                                    </div>
+                                    
+                                    <div class="contact-details">
+                                        <div class="contact-item phone-item">
+                                            <div class="contact-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                                </svg>
+                                            </div>
+                                            <span class="contact-text">+374 XX XXX XXX</span>
+                                        </div>
+                                        
+                                        <div class="contact-item email-item">
+                                            <div class="contact-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                                </svg>
+                                            </div>
+                                            <span class="contact-text">info@landingcraft.pro</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card-footer">
+                                        <div class="card-number">**** **** **** 2024</div>
+                                        <div class="card-brand">CONTACT</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Info Display -->
+                        <div class="contact-info-display">
+                            <div class="info-item">
+                                <div class="info-icon phone-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label" data-lang-key="contact.phone">Հեռախոս</span>
+                                    <a href="tel:+374XXXXXXX" class="info-value">+374 XX XXX XXX</a>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <div class="info-icon email-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="info-content">
+                                    <span class="info-label" data-lang-key="contact.email">Էլ. հասցե</span>
+                                    <a href="mailto:info@landingcraft.pro" class="info-value">info@landingcraft.pro</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side - Contact Form -->
+                    <div class="contact-form-side">
+                        <div class="form-container">
+                            <h3 class="form-title" data-lang-key="contact.formTitle">Ուղարկեք Հաղորդագրություն</h3>
+                            
+                            <form id="contactForm" class="contact-form" action="api/contact.php" method="POST">
+                                <div class="form-group">
+                                    <label for="contactName" class="form-label" data-lang-key="contact.name">Անուն</label>
+                                    <div class="input-container">
+                                        <input type="text" id="contactName" name="name" class="form-input" required>
+                                        <div class="input-glow"></div>
+                                    </div>
+                                    <div class="error-message" id="nameError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactEmail" class="form-label" data-lang-key="contact.emailField">Էլ. հասցե</label>
+                                    <div class="input-container">
+                                        <input type="email" id="contactEmail" name="email" class="form-input" required>
+                                        <div class="input-glow"></div>
+                                    </div>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactPhone" class="form-label" data-lang-key="contact.phoneField">Հեռախոս (ոչ պարտադիր)</label>
+                                    <div class="input-container">
+                                        <input type="tel" id="contactPhone" name="phone" class="form-input">
+                                        <div class="input-glow"></div>
+                                    </div>
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="contactMessage" class="form-label" data-lang-key="contact.message">Հաղորդագրություն</label>
+                                    <div class="input-container textarea-container">
+                                        <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="3" required></textarea>
+                                        <div class="input-glow"></div>
+                                    </div>
+                                    <div class="error-message" id="messageError"></div>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span class="btn-text" data-lang-key="contact.send">Ուղարկել</span>
+                                    <div class="btn-glow"></div>
+                                    <div class="btn-particles">
+                                        <span class="particle-dot"></span>
+                                        <span class="particle-dot"></span>
+                                        <span class="particle-dot"></span>
+                                    </div>
+                                </button>
+                            </form>
+                            
+                            <div class="form-status" id="formStatus"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -830,5 +967,6 @@
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/testimonials.js"></script>
     <script src="assets/js/blog.js"></script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html>
