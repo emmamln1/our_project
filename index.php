@@ -121,10 +121,346 @@
         
         <!-- Projects Section -->
         <section id="projects" class="section projects-section">
-            <div class="container">
-                <h2>Our Projects</h2>
-                <p>Showcase of our innovative work</p>
+            <!-- Background Effects -->
+            <div class="projects-background">
+                <div class="floating-particles">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                <div class="grid-lines">
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                </div>
             </div>
+
+            <div class="container">
+                <!-- Section Header -->
+                <div class="projects-header">
+                    <h2 class="section-title">Մեր Նախագծերը</h2>
+                    <p class="section-subtitle">Բացահայտեք մեր նորարարական աշխատանքների ցուցադրությունը</p>
+                </div>
+
+                <!-- Technology Filter -->
+                <div class="tech-filter">
+                    <button class="filter-btn active" data-filter="all">
+                        <span class="filter-text">Բոլորը</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="react">
+                        <span class="filter-text">React</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="vue">
+                        <span class="filter-text">Vue.js</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="php">
+                        <span class="filter-text">PHP</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="nodejs">
+                        <span class="filter-text">Node.js</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="wordpress">
+                        <span class="filter-text">WordPress</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                    <button class="filter-btn" data-filter="ecommerce">
+                        <span class="filter-text">E-commerce</span>
+                        <div class="filter-glow"></div>
+                    </button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-tech="react nodejs" data-project="1">
+                        <div class="card-image">
+                            <img src="assets/images/project1.jpg" alt="E-commerce Platform" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="1">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">E-commerce Platform</h3>
+                            <p class="project-description">Ժամանակակից առևտրային հարթակ React և Node.js տեխնոլոգիաներով</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">95%</span>
+                                    <span class="stat-label">Performance</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">50K+</span>
+                                    <span class="stat-label">Users</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-tech="vue php" data-project="2">
+                        <div class="card-image">
+                            <img src="assets/images/project2.jpg" alt="Corporate Website" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="2">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example2.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Corporate Website</h3>
+                            <p class="project-description">Պրոֆեսիոնալ կորպորատիվ կայք Vue.js և PHP backend-ով</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">SCSS</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">98%</span>
+                                    <span class="stat-label">SEO Score</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">2.1s</span>
+                                    <span class="stat-label">Load Time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="project-card" data-tech="wordpress php" data-project="3">
+                        <div class="card-image">
+                            <img src="assets/images/project3.jpg" alt="Blog Platform" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="3">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example3.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Blog Platform</h3>
+                            <p class="project-description">Հզոր բլոգային հարթակ WordPress-ի հիման վրա</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Custom Themes</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">10K+</span>
+                                    <span class="stat-label">Articles</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">100K+</span>
+                                    <span class="stat-label">Monthly Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4 -->
+                    <div class="project-card" data-tech="react ecommerce" data-project="4">
+                        <div class="card-image">
+                            <img src="assets/images/project4.jpg" alt="Mobile App" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="4">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example4.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Mobile Shopping App</h3>
+                            <p class="project-description">Բջջային առևտրային հավելված React Native-ով</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Redux</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Payment Gateway</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">4.8★</span>
+                                    <span class="stat-label">App Rating</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">25K+</span>
+                                    <span class="stat-label">Downloads</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 5 -->
+                    <div class="project-card" data-tech="vue nodejs" data-project="5">
+                        <div class="card-image">
+                            <img src="assets/images/project5.jpg" alt="Dashboard" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="5">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example5.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Analytics Dashboard</h3>
+                            <p class="project-description">Ինտերակտիվ վերլուծական վահանակ Vue.js-ով</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">1M+</span>
+                                    <span class="stat-label">Data Points</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">99.9%</span>
+                                    <span class="stat-label">Uptime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 6 -->
+                    <div class="project-card" data-tech="php ecommerce" data-project="6">
+                        <div class="card-image">
+                            <img src="assets/images/project6.jpg" alt="Booking System" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <button class="view-details-btn" data-project="6">
+                                        <span>Մանրամասներ</span>
+                                    </button>
+                                    <button class="view-website-btn" data-url="https://example6.com">
+                                        <span>Կայքը Դիտել</span>
+                                        <svg class="external-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                                            <polyline points="15,3 21,3 21,9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="project-title">Hotel Booking System</h3>
+                            <p class="project-description">Ամբողջական հյուրանոցային ամրագրման համակարգ</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Payment API</span>
+                            </div>
+                            <div class="project-stats">
+                                <div class="stat">
+                                    <span class="stat-value">500+</span>
+                                    <span class="stat-label">Hotels</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">15K+</span>
+                                    <span class="stat-label">Bookings/Month</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <span class="btn-text">Ավելին Բեռնել</span>
+                        <div class="btn-glow"></div>
+                        <div class="btn-particles">
+                            <span class="particle-dot"></span>
+                            <span class="particle-dot"></span>
+                            <span class="particle-dot"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Details Lightbox -->
+            <div class="lightbox-overlay" id="projectLightbox">
+                <div class="lightbox-container">
+                    <button class="lightbox-close" id="closeLightbox">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    <div class="lightbox-content" id="lightboxContent">
+                        <!-- Dynamic content will be loaded here -->
+                    </div>
+                </div>
+            </div>
+
         </section>
         
         <!-- Reviews Section -->
@@ -147,5 +483,7 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/language.js"></script>
     <script src="assets/js/hero.js"></script>
+    <script src="assets/js/whyus.js"></script>
+    <script src="assets/js/projects.js"></script>
 </body>
 </html>
