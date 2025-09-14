@@ -305,6 +305,8 @@
     transform: translateX(100%);
     transition: transform var(--transition-medium);
     border-left: 1px solid rgba(88, 30, 184, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .mobile-menu-overlay.active .mobile-menu {

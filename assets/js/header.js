@@ -148,7 +148,11 @@ class HeaderController {
         this.mobileMenuToggle.classList.add('active');
         this.mobileMenuOverlay.classList.add('active');
         this.mobileMenuToggle.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
+        
+        // Prevent background scrolling but allow menu scrolling
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${window.scrollY}px`;
+        document.body.style.width = '100%';
         
         // Remove focus from toggle button
         this.mobileMenuToggle.blur();
@@ -159,7 +163,13 @@ class HeaderController {
         this.mobileMenuToggle.classList.remove('active');
         this.mobileMenuOverlay.classList.remove('active');
         this.mobileMenuToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        
+        // Restore scroll position and body styles
+        const scrollY = document.body.style.top;
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
         
         this.mobileMenuToggle.blur();
     }
