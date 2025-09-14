@@ -369,7 +369,7 @@
 
                 <!-- Load More Button -->
                 <div class="blog-actions">
-                    <button class="load-more-btn" id="loadMoreBtn">
+                    <button class="load-more-btn" id="blogLoadMoreBtn">
                         <span>Ավելի շատ բեռնել</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path d="M12 5v14M5 12l7 7 7-7"></path>
@@ -694,7 +694,7 @@
 
                 <!-- Load More Button -->
                 <div class="load-more-container">
-                    <button class="load-more-btn" id="loadMoreBtn">
+                    <button class="load-more-btn" id="projectsLoadMoreBtn">
                         <span class="btn-text">Ավելին Բեռնել</span>
                         <div class="btn-glow"></div>
                         <div class="btn-particles">
@@ -703,7 +703,7 @@
                             <span class="particle-dot"></span>
                         </div>
                     </button>
-                    <button class="close-projects-btn" id="closeProjectsBtn" style="display: none;">
+                    <button class="close-projects-btn" id="projectsCloseBtn" style="display: none;">
                         <span class="btn-text">Փակել</span>
                         <div class="btn-glow"></div>
                         <div class="btn-particles">

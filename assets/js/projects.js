@@ -541,8 +541,8 @@ class ProjectsController {
      * Setup load more functionality
      */
     setupLoadMore() {
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const closeProjectsBtn = document.getElementById('closeProjectsBtn');
+        const loadMoreBtn = document.getElementById('projectsLoadMoreBtn');
+        const closeProjectsBtn = document.getElementById('projectsCloseBtn');
         
         if (loadMoreBtn) {
             loadMoreBtn.addEventListener('click', () => {
@@ -579,8 +579,8 @@ class ProjectsController {
      * Update button visibility based on visible projects count
      */
     updateButtonVisibility() {
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const closeProjectsBtn = document.getElementById('closeProjectsBtn');
+        const loadMoreBtn = document.getElementById('projectsLoadMoreBtn');
+        const closeProjectsBtn = document.getElementById('projectsCloseBtn');
         const filteredProjects = this.getFilteredProjects();
         
         if (loadMoreBtn) {
@@ -629,7 +629,7 @@ class ProjectsController {
      */
     renderProjects() {
         const projectsGrid = document.querySelector('.projects-grid');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const loadMoreBtn = document.getElementById('projectsLoadMoreBtn');
         
         if (!projectsGrid) return;
 

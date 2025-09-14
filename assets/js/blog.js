@@ -12,6 +12,7 @@ class BlogManager {
         this.initializeLoadMore();
         this.initializeAnimations();
         this.loadLikedStates();
+        this.storeInitialState();
     }
 
     initializeLikeButtons() {
@@ -172,7 +173,7 @@ class BlogManager {
     }
 
     initializeLoadMore() {
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const loadMoreBtn = document.getElementById('blogLoadMoreBtn');
         if (loadMoreBtn) {
             loadMoreBtn.addEventListener('click', () => {
                 this.loadMorePosts();
@@ -180,8 +181,17 @@ class BlogManager {
         }
     }
 
+
+    storeInitialState() {
+        const blogGrid = document.getElementById('blogGrid');
+        if (blogGrid) {
+            this.initialBlogContent = blogGrid.innerHTML;
+            this.initialCurrentPage = 1;
+        }
+    }
+
     loadMorePosts() {
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const loadMoreBtn = document.getElementById('blogLoadMoreBtn');
         const blogGrid = document.getElementById('blogGrid');
         
         // Show loading state
@@ -245,7 +255,7 @@ class BlogManager {
 
             this.currentPage++;
             
-            // Hide button after loading 3 pages
+            // Hide load more button after loading 3 pages
             if (this.currentPage >= 3) {
                 loadMoreBtn.style.display = 'none';
             }
@@ -291,6 +301,7 @@ class BlogManager {
 
         return morePosts;
     }
+
 
     createBlogPostElement(post) {
         const article = document.createElement('article');
