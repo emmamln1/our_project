@@ -106,8 +106,212 @@
         <!-- Features Section -->
         <section id="features" class="section features-section">
             <div class="container">
-                <h2>Our Features</h2>
-                <p>What we offer to make your project a success</p>
+                <div class="features-header">
+                    <h2 class="features-title">Մեր Հնարավորությունները</h2>
+                    <p class="features-subtitle">Նորարարական լուծումներ ձեր բիզնեսի հաջողության համար</p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1: Responsive Design -->
+                    <div class="feature-card" data-feature="responsive">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                        <line x1="8" y1="21" x2="16" y2="21"/>
+                                        <line x1="12" y1="17" x2="12" y2="21"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Ռեսպոնսիվ Դիզայն</h3>
+                                <p class="feature-description">Կատարյալ տեսք բոլոր սարքերում՝ սմարթֆոնից մինչև դեսկտոպ</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="video-placeholder">
+                                            <div class="device-mockup">
+                                                <div class="screen"></div>
+                                            </div>
+                                            <div class="animation-dots">
+                                                <span></span><span></span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">Ադապտիվ դիզայն բոլոր էկրանների համար</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 2: Performance -->
+                    <div class="feature-card" data-feature="performance">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Բարձր Արագություն</h3>
+                                <p class="feature-description">Օպտիմիզացված կոդ և արագ բեռնում ցանկացած կապի արագությամբ</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="speed-meter">
+                                            <div class="meter-arc"></div>
+                                            <div class="meter-needle"></div>
+                                            <div class="meter-center">98</div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">Բեռնման արագություն < 2 վայրկյան</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 3: SEO Optimization -->
+                    <div class="feature-card" data-feature="seo">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8"/>
+                                        <path d="m21 21-4.35-4.35"/>
+                                        <path d="M11 15l3-3-3-3"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">SEO Օպտիմիզացում</h3>
+                                <p class="feature-description">Լավագույն դիրքավորում որոնողական համակարգերում</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="seo-chart">
+                                            <div class="chart-bar" style="--height: 85%"></div>
+                                            <div class="chart-bar" style="--height: 92%"></div>
+                                            <div class="chart-bar" style="--height: 78%"></div>
+                                            <div class="chart-bar" style="--height: 96%"></div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">Google-ի առաջին էջում տեղավորում</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 4: Security -->
+                    <div class="feature-card" data-feature="security">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                        <path d="m9 12 2 2 4-4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Անվտանգություն</h3>
+                                <p class="feature-description">SSL սերտիֆիկատ և ժամանակակից պաշտպանություն</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="security-shield">
+                                            <div class="shield-icon">🛡️</div>
+                                            <div class="security-waves">
+                                                <div class="wave"></div>
+                                                <div class="wave"></div>
+                                                <div class="wave"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">256-բիթ SSL կոդավորում</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 5: Custom Development -->
+                    <div class="feature-card" data-feature="custom">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16,18 22,12 16,6"/>
+                                        <polyline points="8,6 2,12 8,18"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Հատուկ Մշակում</h3>
+                                <p class="feature-description">Անհատական լուծումներ ձեր բիզնեսի կարիքների համար</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="code-animation">
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-line"></div>
+                                            <div class="code-cursor"></div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">Մաքուր և մասշտաբային կոդ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Feature Card 6: Support -->
+                    <div class="feature-card" data-feature="support">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="feature-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                                        <path d="M8 9h8"/>
+                                        <path d="M8 13h6"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">24/7 Աջակցություն</h3>
+                                <p class="feature-description">Մշտական տեխնիկական աջակցություն և սպասարկում</p>
+                                <div class="flip-indicator">
+                                    <span>Hover for demo</span>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="demo-content">
+                                    <div class="demo-video">
+                                        <div class="support-chat">
+                                            <div class="chat-bubble">
+                                                <div class="typing-indicator">
+                                                    <span></span><span></span><span></span>
+                                                </div>
+                                            </div>
+                                            <div class="online-indicator"></div>
+                                        </div>
+                                    </div>
+                                    <p class="demo-text">Ակտիվ աջակցություն ցանկացած ժամանակ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -964,6 +1168,7 @@
     <script src="assets/js/language.js"></script>
     <script src="assets/js/hero.js"></script>
     <script src="assets/js/whyus.js"></script>
+    <script src="assets/js/features.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/testimonials.js"></script>
     <script src="assets/js/blog.js"></script>
