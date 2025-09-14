@@ -19,9 +19,71 @@
     <main class="main-content">
         <!-- Hero Section -->
         <section id="home" class="section hero-section">
-            <div class="container">
-                <h2>Welcome to the Future</h2>
-                <p>Professional landing page development with cutting-edge design</p>
+            <!-- Animated Background Elements -->
+            <div class="hero-background">
+                <div class="flowing-lines">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                    <div class="line line-4"></div>
+                </div>
+                <div class="particles-container">
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                    <div class="particle"></div>
+                </div>
+                <div class="energy-streams">
+                    <div class="stream stream-1"></div>
+                    <div class="stream stream-2"></div>
+                    <div class="stream stream-3"></div>
+                </div>
+            </div>
+            
+            <!-- Main Hero Content -->
+            <div class="hero-container">
+                <div class="hero-content">
+                    
+                    
+                    <h1 class="hero-title">
+                        <span class="title-line-1">Welcome to the</span>
+                        <span class="title-line-2 glow-text">Digital Future</span>
+                        <span class="title-line-3">of Web Development</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Experience cutting-edge landing page development with futuristic design, 
+                        advanced animations, and cyberpunk aesthetics that captivate your audience
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <button class="cta-button primary-cta">
+                            <span class="button-text">Start Your Project</span>
+                            <div class="button-glow"></div>
+                            <div class="button-particles">
+                                <span class="particle-dot"></span>
+                                <span class="particle-dot"></span>
+                                <span class="particle-dot"></span>
+                            </div>
+                        </button>
+                        
+                        <button class="cta-button secondary-cta">
+                            <span class="button-text">View Portfolio</span>
+                            <div class="button-border"></div>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Floating Elements -->
+                <div class="floating-elements">
+                    <div class="floating-orb orb-1"></div>
+                    <div class="floating-orb orb-2"></div>
+                    <div class="floating-orb orb-3"></div>
+                </div>
             </div>
         </section>
         
@@ -84,5 +146,6 @@
 
     <script src="assets/js/header.js"></script>
     <script src="assets/js/language.js"></script>
+    <script src="assets/js/hero.js"></script>
 </body>
 </html>
