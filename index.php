@@ -475,8 +475,82 @@
         <!-- Reviews Section -->
         <section id="reviews" class="section reviews-section">
             <div class="container">
-                <h2>Reviews</h2>
-                <p>What our clients say about our futuristic approach</p>
+                <div class="reviews-header">
+                    <h2>Գնահատականներ</h2>
+                    <p>Ինչ են ասում մեր հաճախորդները մեր ապագայական մոտեցման մասին</p>
+                </div>
+                
+                <div class="testimonial-wrapper">
+                    <div class="testimonial-carousel">
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="John Smith" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"LandingCraft Pro-ն փոխակերպեց մեր բիզնեսը: Նրանց ապագայական մոտեցումը և նորարարական լուծումները մեզ օգնեցին հասնել նոր բարձունքների:"</p>
+                                <p class="customer-name">Ջոն Սմիթ</p>
+                                <p class="customer-title">Տեխնոլոգիական ընկերության CEO</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face" alt="Sarah Johnson" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"Անհավատալի արդյունք: Մեր վեբկայքի վերափոխումը բերեց 300% ավելի շատ հաճախորդներ: Խորհուրդ եմ տալիս բոլորին:"</p>
+                                <p class="customer-name">Սարա Ջոնսոն</p>
+                                <p class="customer-title">Մարքեթինգի տնօրեն</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Michael Chen" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"Պրոֆեսիոնալ թիմ, որակյալ աշխատանք և գերազանց արդյունք: Նրանք իսկապես հասկանում են, թե ինչպես ստեղծել ապագայական դիզայն:"</p>
+                                <p class="customer-name">Մայքլ Չեն</p>
+                                <p class="customer-title">Ստարտափի հիմնադիր</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Emily Rodriguez" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"LandingCraft Pro-ի հետ աշխատելը իսկական հաճույք էր: Նրանք ոչ միայն ստեղծեցին գեղեցիկ կայք, այլև ապահովեցին բարձր կատարողականություն:"</p>
+                                <p class="customer-name">Էմիլի Ռոդրիգես</p>
+                                <p class="customer-title">Էլեկտրոնային առևտրի մասնագետ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="David Park" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"Գերազանց փորձ սկսից մինչև վերջ: Թիմը շատ ուշադիր էր մանրուքների նկատմամբ և ապահովեց բոլոր մեր պահանջները:"</p>
+                                <p class="customer-name">Դեյվիդ Պարկ</p>
+                                <p class="customer-title">Ծրագրային ապահովման ճարտարապետ</p>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel__item">
+                            <div class="carousel__item-head">
+                                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=150&h=150&fit=crop&crop=face" alt="Lisa Thompson" class="customer-photo">
+                            </div>
+                            <div class="carousel__item-body">
+                                <p class="review-text">"Նրանց ստեղծագործական մոտեցումը և տեխնիկական գիտելիքները կատարյալ համադրություն են: Մեր նոր կայքը իսկապես առանձնանում է:"</p>
+                                <p class="customer-name">Լիսա Թոմսոն</p>
+                                <p class="customer-title">Դիզայնի ստուդիայի սեփականատեր</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
             </div>
         </section>
         
@@ -494,5 +568,6 @@
     <script src="assets/js/hero.js"></script>
     <script src="assets/js/whyus.js"></script>
     <script src="assets/js/projects.js"></script>
+    <script src="assets/js/testimonials.js"></script>
 </body>
 </html>
