@@ -40,6 +40,14 @@
                 <p>Experience the difference with our futuristic solutions</p>
             </div>
         </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section features-section">
+            <div class="container">
+                <h2>Our Features</h2>
+                <p>What we offer to make your project a success</p>
+            </div>
+        </section>
         
         <!-- Blog Section -->
         <section id="blog" class="section blog-section">

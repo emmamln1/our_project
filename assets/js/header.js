@@ -150,9 +150,8 @@ class HeaderController {
         this.mobileMenuToggle.setAttribute('aria-expanded', 'true');
         document.body.style.overflow = 'hidden';
         
-        setTimeout(() => {
-            this.mobileMenuClose.focus();
-        }, 300);
+        // Remove focus from toggle button
+        this.mobileMenuToggle.blur();
     }
     
     closeMobileMenu() {
@@ -162,7 +161,7 @@ class HeaderController {
         this.mobileMenuToggle.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
         
-        this.mobileMenuToggle.focus();
+        this.mobileMenuToggle.blur();
     }
     
     // Section Detection and Active Navigation
