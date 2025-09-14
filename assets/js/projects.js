@@ -542,9 +542,17 @@ class ProjectsController {
      */
     setupLoadMore() {
         const loadMoreBtn = document.getElementById('loadMoreBtn');
+        const closeProjectsBtn = document.getElementById('closeProjectsBtn');
+        
         if (loadMoreBtn) {
             loadMoreBtn.addEventListener('click', () => {
                 this.loadMoreProjects();
+            });
+        }
+        
+        if (closeProjectsBtn) {
+            closeProjectsBtn.addEventListener('click', () => {
+                this.closeExtraProjects();
             });
         }
     }
@@ -555,11 +563,42 @@ class ProjectsController {
     loadMoreProjects() {
         this.visibleProjects += this.projectsPerLoad;
         this.renderProjects();
-        
-        // Hide load more button if all projects are visible
+        this.updateButtonVisibility();
+    }
+
+    /**
+     * Close extra projects and return to showing only first 3
+     */
+    closeExtraProjects() {
+        this.visibleProjects = 3;
+        this.renderProjects();
+        this.updateButtonVisibility();
+    }
+
+    /**
+     * Update button visibility based on visible projects count
+     */
+    updateButtonVisibility() {
         const loadMoreBtn = document.getElementById('loadMoreBtn');
-        if (this.visibleProjects >= this.getFilteredProjects().length && loadMoreBtn) {
-            loadMoreBtn.style.display = 'none';
+        const closeProjectsBtn = document.getElementById('closeProjectsBtn');
+        const filteredProjects = this.getFilteredProjects();
+        
+        if (loadMoreBtn) {
+            // Hide load more button if all projects are visible
+            if (this.visibleProjects >= filteredProjects.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'block';
+            }
+        }
+        
+        if (closeProjectsBtn) {
+            // Show close button only when more than 3 projects are visible
+            if (this.visibleProjects > 3) {
+                closeProjectsBtn.style.display = 'block';
+            } else {
+                closeProjectsBtn.style.display = 'none';
+            }
         }
     }
 
@@ -608,14 +647,8 @@ class ProjectsController {
             projectsGrid.appendChild(projectCard);
         });
 
-        // Show/hide load more button
-        if (loadMoreBtn) {
-            if (this.visibleProjects >= filteredProjects.length) {
-                loadMoreBtn.style.display = 'none';
-            } else {
-                loadMoreBtn.style.display = 'block';
-            }
-        }
+        // Update button visibility
+        this.updateButtonVisibility();
 
         // Add scroll animations
         this.addScrollAnimations();

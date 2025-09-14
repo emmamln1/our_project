@@ -443,6 +443,15 @@
                             <span class="particle-dot"></span>
                         </div>
                     </button>
+                    <button class="close-projects-btn" id="closeProjectsBtn" style="display: none;">
+                        <span class="btn-text">Փակել</span>
+                        <div class="btn-glow"></div>
+                        <div class="btn-particles">
+                            <span class="particle-dot"></span>
+                            <span class="particle-dot"></span>
+                            <span class="particle-dot"></span>
+                        </div>
+                    </button>
                 </div>
             </div>
 
