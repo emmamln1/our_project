@@ -127,7 +127,7 @@ body {
 
 /* Main Content */
 .main-content {
-    margin-top: 80px;
+    margin-top: 0;
 }
 
 .section {
@@ -137,6 +137,7 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark) 100%);
+    scroll-margin-top: 80px;
 }
 
 .container {
@@ -167,10 +168,11 @@ body {
 /* Hero Section Base */
 .hero-section {
     position: relative;
-    max-height: 100vh;
+    min-height: 100vh;
     padding: 0;
     overflow: hidden;
     background: radial-gradient(ellipse at center, rgba(88, 30, 184, 0.1) 0%, var(--bg-black) 70%);
+    scroll-margin-top: 0;
 }
 
 /* Animated Background Elements */
@@ -420,6 +422,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
 }
 
 /* Hero Content */
@@ -435,12 +438,18 @@ body {
 .hero-title {
     font-size: clamp(4rem, 6vw, 4rem);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.3;
     margin-bottom: 2rem;
     font-family: 'Poppins', sans-serif;
 }
 
-.title-line-1,
+.title-line-1 {
+    display: block;
+    color: var(--text-primary);
+    animation: slideInFromTop 1s ease-out;
+    font-size: 1.6em;
+}
+
 .title-line-3 {
     display: block;
     color: var(--text-primary);
@@ -707,11 +716,16 @@ body {
 @media (max-width: 768px) {
     .hero-container {
         padding: 0 20px;
+        padding-top: 100px;
     }
     
     .hero-title {
-        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-size: clamp(1.8rem, 7vw, 3rem);
         margin-bottom: 1.2rem;
+    }
+    
+    .title-line-1 {
+        font-size: 1.3em;
     }
     
     .hero-description {
@@ -754,8 +768,12 @@ body {
     
     
     .hero-title {
-        font-size: clamp(1.8rem, 9vw, 3rem);
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
         margin-bottom: 1rem;
+    }
+    
+    .title-line-1 {
+        font-size: 1.2em;
     }
     
     .hero-description {
@@ -789,7 +807,11 @@ body {
     }
     
     .hero-title {
-        font-size: clamp(1.6rem, 10vw, 2.5rem);
+        font-size: clamp(1.3rem, 9vw, 2rem);
+    }
+    
+    .title-line-1 {
+        font-size: 1.1em;
     }
     
     .hero-description {
@@ -829,8 +851,7 @@ body {
     }
     
     .hero-container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 4rem;
     }
 }
 
