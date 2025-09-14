@@ -142,13 +142,7 @@
                             <p class="blog-card-excerpt">Բացահայտեք վեբ զարգացման նորագույն տեխնոլոգիաները և մեթոդները, որոնք կձևավորեն ապագա տարիները:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Արամ Գրիգորյան</h4>
-                                        <span class="blog-date">15 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">15 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">
@@ -187,13 +181,7 @@
                             <p class="blog-card-excerpt">Սովորեք ինչպես ստեղծել գրավիչ և օգտակար ինտերֆեյսներ, որոնք կբարելավեն օգտատերերի փորձառությունը:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Անի Հակոբյան</h4>
-                                        <span class="blog-date">12 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">12 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">
@@ -232,13 +220,7 @@
                             <p class="blog-card-excerpt">Ինչպես է AI-ն փոխում բիզնես գործընթացները և ինչ հնարավորություններ է բացում ապագայում:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Դավիթ Մարտիրոսյան</h4>
-                                        <span class="blog-date">10 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">10 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">
@@ -277,13 +259,7 @@
                             <p class="blog-card-excerpt">Բացահայտեք ամենաարդյունավետ մարքեթինգային մեթոդները, որոնք կօգնեն ձեր բիզնեսին աճել:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Մարիամ Ավագյան</h4>
-                                        <span class="blog-date">8 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">8 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">
@@ -322,13 +298,7 @@
                             <p class="blog-card-excerpt">Սովորեք ինչպես ստեղծել բարձրորակ մոբայլ հավելվածներ, որոնք կգրավեն օգտատերերին:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Նարեկ Պետրոսյան</h4>
-                                        <span class="blog-date">5 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">5 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">
@@ -367,13 +337,7 @@
                             <p class="blog-card-excerpt">Պաշտպանեք ձեր բիզնեսը կիբերհարձակումներից՝ հետևելով այս պարզ բայց արդյունավետ խորհուրդներին:</p>
                             
                             <div class="blog-card-meta">
-                                <div class="blog-author">
-                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                                    <div class="author-info">
-                                        <h4>Արթուր Ղազարյան</h4>
-                                        <span class="blog-date">3 Դեկտեմբեր, 2024</span>
-                                    </div>
-                                </div>
+                                <span class="blog-date">3 Դեկտեմբեր, 2024</span>
                             </div>
 
                             <div class="blog-card-footer">

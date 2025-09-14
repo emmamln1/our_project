@@ -75,8 +75,8 @@ class BlogManager {
         // Generate a unique ID based on the blog card content
         const blogCard = button.closest('.blog-card');
         const title = blogCard.querySelector('.blog-card-title').textContent;
-        const author = blogCard.querySelector('.author-info h4').textContent;
-        return btoa(title + author).replace(/[^a-zA-Z0-9]/g, '').substring(0, 10);
+        const date = blogCard.querySelector('.blog-date').textContent;
+        return btoa(title + date).replace(/[^a-zA-Z0-9]/g, '').substring(0, 10);
     }
 
     loadLikedStates() {
@@ -260,8 +260,6 @@ class BlogManager {
                 image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop&crop=center',
                 title: 'React-ի Նոր Հնարավորությունները 2024-ում',
                 excerpt: 'Բացահայտեք React-ի վերջին թարմացումները և ինչպես դրանք կարող են բարելավել ձեր զարգացման գործընթացը:',
-                author: 'Գագիկ Սարգսյան',
-                avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face',
                 date: '1 Դեկտեմբեր, 2024',
                 views: 167,
                 rating: 4.6,
@@ -273,8 +271,6 @@ class BlogManager {
                 image: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop&crop=center',
                 title: 'SEO Օպտիմիզացիայի Ամբողջական Ուղեցույց',
                 excerpt: 'Սովորեք ինչպես բարելավել ձեր կայքի դիրքը որոնման արդյունքներում և ավելացնել օրգանական ցրաֆիկը:',
-                author: 'Լուսինե Ղազարյան',
-                avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face',
                 date: '28 Նոյեմբեր, 2024',
                 views: 234,
                 rating: 4.9,
@@ -286,8 +282,6 @@ class BlogManager {
                 image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center',
                 title: 'Էլեկտրոնային Առևտրի Հաջողության Գաղտնիքները',
                 excerpt: 'Ինչպես ստեղծել հաջողակ օնլայն խանութ և ավելացնել վաճառքները արդյունավետ ռազմավարությունների միջոցով:',
-                author: 'Արտակ Մանուկյան',
-                avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face',
                 date: '25 Նոյեմբեր, 2024',
                 views: 189,
                 rating: 4.7,
@@ -313,13 +307,7 @@ class BlogManager {
                 <p class="blog-card-excerpt">${post.excerpt}</p>
                 
                 <div class="blog-card-meta">
-                    <div class="blog-author">
-                        <img src="${post.avatar}" alt="Author" class="author-avatar">
-                        <div class="author-info">
-                            <h4>${post.author}</h4>
-                            <span class="blog-date">${post.date}</span>
-                        </div>
-                    </div>
+                    <span class="blog-date">${post.date}</span>
                 </div>
 
                 <div class="blog-card-footer">

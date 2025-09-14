@@ -141,9 +141,9 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1340px;
     margin: 0 auto;
-    padding: var(--container-padding);
+  
     text-align: center;
 }
 
@@ -2105,43 +2105,28 @@ border-color: var(--secondary-pink);
 .blog-card-meta {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 20px;
 }
 
-.blog-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.author-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid rgba(88, 30, 184, 0.5);
+.blog-date {
+    font-size: 0.9rem;
+    color: rgba(0, 203, 250, 0.9);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, rgba(0, 203, 250, 0.1), rgba(88, 30, 184, 0.1));
+    border: 1px solid rgba(0, 203, 250, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
 
-.blog-card:hover .author-avatar {
-    border-color: #D811F0;
-    box-shadow: 0 0 20px rgba(216, 17, 240, 0.5);
-}
-
-.author-info h4 {
-    font-size: 0.95rem;
+.blog-card:hover .blog-date {
     color: #00CBFA;
-    margin: 0 0 4px 0;
-    font-weight: 600;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-.blog-date {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    font-weight: 400;
+    border-color: #00CBFA;
+    box-shadow: 0 0 15px rgba(0, 203, 250, 0.3);
+    transform: translateY(-1px);
 }
 
 .blog-card-footer {
@@ -2345,14 +2330,7 @@ border-color: var(--secondary-pink);
     }
     
     .blog-card-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-    
-    .author-avatar {
-        width: 35px;
-        height: 35px;
+        justify-content: flex-start;
     }
     
     .blog-stats {
