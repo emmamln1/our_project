@@ -168,7 +168,8 @@ body {
 /* Hero Section Base */
 .hero-section {
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
     padding: 0;
     overflow: hidden;
     background: radial-gradient(ellipse at center, rgba(88, 30, 184, 0.1) 0%, var(--bg-black) 70%);
@@ -418,11 +419,11 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: var(--container-padding);
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 0;
 }
 
 /* Hero Content */
@@ -716,7 +717,7 @@ body {
 @media (max-width: 768px) {
     .hero-container {
         padding: 0 20px;
-        padding-top: 100px;
+        padding-top: 20px;
     }
     
     .hero-title {
@@ -828,30 +829,50 @@ body {
 /* Height-based responsive adjustments */
 @media (max-height: 700px) {
     .hero-section {
-        min-height: 90vh;
+        min-height: calc(100vh - 80px);
+        margin-top: 80px;
     }
     
+    .hero-container {
+        min-height: calc(100vh - 80px);
+        padding-top: 1rem;
+    }
     
     .hero-title {
         margin-bottom: 1rem;
     }
     
     .hero-description {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     
     .hero-actions {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
 
 @media (max-height: 600px) {
     .hero-section {
-        min-height: 85vh;
+        min-height: calc(100vh - 80px);
+        margin-top: 80px;
     }
     
     .hero-container {
-        padding-top: 4rem;
+        min-height: calc(100vh - 80px);
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .hero-title {
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-description {
+        margin-bottom: 1rem;
+    }
+    
+    .hero-actions {
+        margin-bottom: 1rem;
     }
 }
 
