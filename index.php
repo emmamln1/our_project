@@ -113,9 +113,305 @@
         
         <!-- Blog Section -->
         <section id="blog" class="section blog-section">
+            <div class="blog-background">
+                <div class="grid-lines">
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line vertical"></div>
+                    <div class="grid-line vertical"></div>
+                </div>
+            </div>
+
             <div class="container">
-                <h2>Blog</h2>
-                <p>Latest insights from the digital frontier</p>
+                <!-- Section Header -->
+                <div class="blog-header">
+                    <h2 class="section-title">Բլոգ</h2>
+                    <p class="section-subtitle">Վերջին գիտելիքները ցիֆրային սահմանից</p>
+                </div>
+
+                <!-- Blog Grid -->
+                <div class="blog-grid" id="blogGrid">
+                    <!-- Sample Blog Cards -->
+                    <article class="blog-card" data-category="web-development">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" alt="Web Development Trends">
+                            <div class="blog-category web-dev">Վեբ Զարգացում</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">Ժամանակակից Վեբ Զարգացման Միտումները 2024-ում</h3>
+                            <p class="blog-card-excerpt">Բացահայտեք վեբ զարգացման նորագույն տեխնոլոգիաները և մեթոդները, որոնք կձևավորեն ապագա տարիները:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Արամ Գրիգորյան</h4>
+                                        <span class="blog-date">15 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        245
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.8
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="23">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">23</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="design">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=250&fit=crop&crop=center" alt="UI/UX Design">
+                            <div class="blog-category design">Դիզայն</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">UI/UX Դիզայնի Հիմունքները Սկսնակների Համար</h3>
+                            <p class="blog-card-excerpt">Սովորեք ինչպես ստեղծել գրավիչ և օգտակար ինտերֆեյսներ, որոնք կբարելավեն օգտատերերի փորձառությունը:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Անի Հակոբյան</h4>
+                                        <span class="blog-date">12 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        189
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.9
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="31">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">31</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="technology">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop&crop=center" alt="AI Technology">
+                            <div class="blog-category tech">Տեխնոլոգիա</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">Արհեստական Բանականության Ապագան Բիզնեսում</h3>
+                            <p class="blog-card-excerpt">Ինչպես է AI-ն փոխում բիզնես գործընթացները և ինչ հնարավորություններ է բացում ապագայում:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Դավիթ Մարտիրոսյան</h4>
+                                        <span class="blog-date">10 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        312
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.7
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="45">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">45</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="marketing">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="Digital Marketing">
+                            <div class="blog-category marketing">Մարքեթինգ</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">Ցիֆրային Մարքեթինգի Արդյունավետ Ռազմավարություններ</h3>
+                            <p class="blog-card-excerpt">Բացահայտեք ամենաարդյունավետ մարքեթինգային մեթոդները, որոնք կօգնեն ձեր բիզնեսին աճել:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Մարիամ Ավագյան</h4>
+                                        <span class="blog-date">8 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        156
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.6
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="19">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">19</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="mobile">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center" alt="Mobile Development">
+                            <div class="blog-category mobile">Մոբայլ</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">Մոբայլ Հավելվածների Զարգացման Լավագույն Պրակտիկաները</h3>
+                            <p class="blog-card-excerpt">Սովորեք ինչպես ստեղծել բարձրորակ մոբայլ հավելվածներ, որոնք կգրավեն օգտատերերին:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Նարեկ Պետրոսյան</h4>
+                                        <span class="blog-date">5 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        203
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.5
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="27">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">27</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" data-category="security">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=250&fit=crop&crop=center" alt="Cybersecurity">
+                            <div class="blog-category security">Անվտանգություն</div>
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 class="blog-card-title">Կիբերանվտանգության Հիմունքները Փոքր Բիզնեսի Համար</h3>
+                            <p class="blog-card-excerpt">Պաշտպանեք ձեր բիզնեսը կիբերհարձակումներից՝ հետևելով այս պարզ բայց արդյունավետ խորհուրդներին:</p>
+                            
+                            <div class="blog-card-meta">
+                                <div class="blog-author">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
+                                    <div class="author-info">
+                                        <h4>Արթուր Ղազարյան</h4>
+                                        <span class="blog-date">3 Դեկտեմբեր, 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="blog-card-footer">
+                                <div class="blog-stats">
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                        178
+                                    </span>
+                                    <span class="stat-item">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                        4.8
+                                    </span>
+                                </div>
+                                <button class="like-btn" data-likes="35">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    <span class="like-count">35</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="blog-actions">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        <span>Ավելի շատ բեռնել</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 5v14M5 12l7 7 7-7"></path>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         
@@ -569,5 +865,6 @@
     <script src="assets/js/whyus.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/testimonials.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 </html>
