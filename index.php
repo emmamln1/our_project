@@ -1347,6 +1347,8 @@
         </section>
     </main>
 
+    <?php include 'footer.php'; ?>
+
     <script src="assets/js/header.js"></script>
     <script src="assets/js/language.js"></script>
     <script src="assets/js/hero.js"></script>
@@ -1357,5 +1359,6 @@
     <script src="assets/js/testimonials.js"></script>
     <script src="assets/js/blog.js"></script>
     <script src="assets/js/contact.js"></script>
+    <script src="assets/js/footer.js"></script>
 </body>
 </html>
