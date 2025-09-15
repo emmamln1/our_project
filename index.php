@@ -88,10 +88,88 @@
         </section>
         
         <!-- About Us Section -->
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>Discover our innovative approach to web development</p>
+        <section id="about-us" class="section about-us-section">
+            <div class="about-us-container">
+                <h1 class="main-title">About Us</h1>
+                
+                <div class="content-grid">
+                    <!-- Left Side: Company Information -->
+                    <div class="company-info">
+                        <div class="info-block">
+                            <h2 class="subtitle">Our Story</h2>
+                            <p class="description">
+                                LandingCraft Pro was founded with a vision to revolutionize web development through cutting-edge technology and innovative design. We believe in creating digital experiences that not only look stunning but also deliver exceptional performance and user engagement.
+                            </p>
+                        </div>
+                        
+                        <div class="info-block">
+                            <h2 class="subtitle">Our Mission</h2>
+                            <p class="description">
+                                We are dedicated to empowering businesses with future-ready digital solutions. Our team combines creativity, technical expertise, and strategic thinking to build websites and applications that drive growth and success in the digital landscape.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: Robot Animation -->
+                    <div class="robot-section">
+                        <div class="thought-bubble" id="thoughtBubble">
+                            <div class="bubble-content">
+                                <span class="thought-text" id="thoughtText"></span>
+                                <div class="typing-cursor" id="typingCursor"></div>
+                            </div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                        
+                        <div class="robot-container">
+                            <div class="robot">
+                                <!-- Robot Head -->
+                                <div class="robot-head">
+                                    <div class="robot-eye left-eye"></div>
+                                    <div class="robot-eye right-eye"></div>
+                                    <div class="robot-antenna">
+                                        <div class="antenna-ball"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Robot Body -->
+                                <div class="robot-body">
+                                    <div class="robot-chest">
+                                        <div class="chest-light"></div>
+                                        <div class="chest-panel">
+                                            <div class="panel-line"></div>
+                                            <div class="panel-line"></div>
+                                            <div class="panel-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Robot Arms -->
+                                <div class="robot-arm left-arm">
+                                    <div class="arm-segment upper-arm"></div>
+                                    <div class="arm-segment lower-arm"></div>
+                                    <div class="robot-hand"></div>
+                                </div>
+                                <div class="robot-arm right-arm">
+                                    <div class="arm-segment upper-arm"></div>
+                                    <div class="arm-segment lower-arm"></div>
+                                    <div class="robot-hand"></div>
+                                </div>
+                                
+                                <!-- Robot Base -->
+                                <div class="robot-base">
+                                    <div class="base-light"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-button-container">
+                            <button class="contact-btn" id="contactBtn">
+                                <span class="btn-text">Contact Us</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -1169,6 +1247,7 @@
     <script src="assets/js/hero.js"></script>
     <script src="assets/js/whyus.js"></script>
     <script src="assets/js/features.js"></script>
+    <script src="assets/js/about.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/testimonials.js"></script>
     <script src="assets/js/blog.js"></script>

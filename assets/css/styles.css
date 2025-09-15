@@ -1421,6 +1421,561 @@ body {
     }
 }
 
+/* About Us Section */
+#about-us {
+    height: 100vh;
+    padding: 0 40px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(88, 30, 184, 0.08) 50%, rgba(0, 0, 0, 0.95) 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#about-us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(88, 30, 184, 0.1) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(0, 203, 250, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+#about-us .about-us-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+#about-us .main-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 300;
+    color: var(--text-primary);
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 1rem;
+    background: linear-gradient(135deg, var(--primary-purple), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInDown 1s ease-out 0.3s forwards;
+}
+
+#about-us .content-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 1rem 0 2rem;
+}
+
+/* Left Side - Company Information */
+#about-us .company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 1s ease-out 0.6s forwards;
+}
+
+#about-us .info-block {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: 1px solid rgba(88, 30, 184, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+#about-us .info-block:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 10px 30px rgba(0, 203, 250, 0.2);
+    transform: translateY(-5px);
+}
+
+#about-us .subtitle {
+    font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+    font-weight: 600;
+    color: var(--primary-purple);
+    margin: 0 0 1rem 0;
+    position: relative;
+}
+
+#about-us .subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-purple), var(--accent-cyan));
+    border-radius: 1px;
+}
+
+#about-us .description {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Right Side - Robot Section */
+#about-us .robot-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 1s ease-out 0.9s forwards;
+}
+
+/* Thought Bubble */
+#about-us .thought-bubble {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    min-width: 200px;
+    max-width: 280px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(-20px) scale(0.8);
+    transition: all 0.5s ease;
+}
+
+#about-us .thought-bubble.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#about-us .bubble-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#about-us .thought-text {
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: #333;
+    font-weight: 500;
+    min-height: 1.5rem;
+}
+
+#about-us .typing-cursor {
+    width: 2px;
+    height: 1.2rem;
+    background: var(--primary-purple);
+    opacity: 0;
+    animation: cursorBlink 1s infinite;
+}
+
+#about-us .bubble-tail {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(255, 255, 255, 0.95);
+}
+
+/* Robot Character */
+#about-us .robot-container {
+    margin: 1rem 0;
+}
+
+#about-us .robot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: robotFloat 3s ease-in-out infinite;
+}
+
+#about-us .robot-head {
+    width: 80px;
+    height: 70px;
+    background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+    border-radius: 20px 20px 15px 15px;
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about-us .robot-eye {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    box-shadow: 0 0 10px rgba(0, 203, 250, 0.8);
+    animation: eyeBlink 4s infinite;
+}
+
+#about-us .robot-eye.left-eye {
+    left: 20px;
+}
+
+#about-us .robot-eye.right-eye {
+    right: 20px;
+}
+
+#about-us .robot-antenna {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 15px;
+    background: #888;
+}
+
+#about-us .antenna-ball {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: var(--primary-purple);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(88, 30, 184, 0.8);
+    animation: antennaPulse 2s infinite;
+}
+
+#about-us .robot-body {
+    width: 100px;
+    height: 120px;
+    background: linear-gradient(135deg, #d0d0d0, #a0a0a0);
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#about-us .robot-chest {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 80px;
+}
+
+#about-us .chest-light {
+    width: 20px;
+    height: 20px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    box-shadow: 0 0 15px rgba(0, 203, 250, 0.8);
+    animation: chestPulse 2s infinite;
+}
+
+#about-us .chest-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+#about-us .panel-line {
+    width: 40px;
+    height: 3px;
+    background: #666;
+    border-radius: 2px;
+}
+
+#about-us .robot-arm {
+    position: absolute;
+    top: 20px;
+    width: 15px;
+    height: 80px;
+}
+
+#about-us .robot-arm.left-arm {
+    left: -20px;
+    animation: leftArmWave 4s infinite;
+}
+
+#about-us .robot-arm.right-arm {
+    right: -20px;
+    animation: rightArmWave 4s infinite 2s;
+}
+
+#about-us .arm-segment {
+    width: 15px;
+    height: 35px;
+    background: linear-gradient(135deg, #c0c0c0, #909090);
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+#about-us .robot-hand {
+    width: 18px;
+    height: 18px;
+    background: linear-gradient(135deg, #b0b0b0, #808080);
+    border-radius: 50%;
+}
+
+#about-us .robot-base {
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(135deg, #c0c0c0, #909090);
+    border-radius: 20px;
+    position: relative;
+    margin-top: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#about-us .base-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 8px;
+    background: linear-gradient(90deg, var(--primary-purple), var(--accent-cyan));
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(88, 30, 184, 0.6);
+    animation: baseLightScan 3s infinite;
+}
+
+/* Contact Button */
+#about-us .contact-button-container {
+    margin-top: 1.5rem;
+}
+
+#about-us .contact-btn {
+    position: relative;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--primary-purple), var(--secondary-pink));
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(88, 30, 184, 0.4);
+}
+
+#about-us .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(88, 30, 184, 0.6);
+}
+
+#about-us .btn-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent, var(--accent-cyan), transparent);
+    opacity: 0;
+    animation: buttonGlow 2s linear infinite;
+    transition: opacity 0.3s ease;
+}
+
+#about-us .contact-btn:hover .btn-glow {
+    opacity: 0.3;
+}
+
+#about-us .btn-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes robotFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes eyeBlink {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0; }
+}
+
+@keyframes antennaPulse {
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    50% { opacity: 1; transform: translateX(-50%) scale(1.2); }
+}
+
+@keyframes chestPulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+}
+
+@keyframes leftArmWave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+}
+
+@keyframes rightArmWave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    75% { transform: rotate(-10deg); }
+}
+
+@keyframes baseLightScan {
+    0% { transform: translate(-50%, -50%) scaleX(0.5); opacity: 0.5; }
+    50% { transform: translate(-50%, -50%) scaleX(1); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scaleX(0.5); opacity: 0.5; }
+}
+
+@keyframes cursorBlink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes buttonGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #about-us {
+        padding: 0 30px;
+    }
+    
+    #about-us .content-grid {
+        gap: 2rem;
+    }
+    
+    #about-us .robot {
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        padding: 0 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #about-us .main-title {
+        padding: 1.5rem 0 0.5rem;
+    }
+    
+    #about-us .content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0.5rem 0 1.5rem;
+    }
+    
+    #about-us .company-info {
+        order: 2;
+        gap: 1.5rem;
+    }
+    
+    #about-us .robot-section {
+        order: 1;
+    }
+    
+    #about-us .robot {
+        transform: scale(0.8);
+    }
+    
+    #about-us .info-block {
+        padding: 1.2rem;
+    }
+    
+    #about-us .thought-bubble {
+        max-width: 250px;
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-us {
+        padding: 0 15px;
+    }
+    
+    #about-us .main-title {
+        padding: 1rem 0 0.5rem;
+    }
+    
+    #about-us .content-grid {
+        gap: 1.5rem;
+        padding: 0.5rem 0 1rem;
+    }
+    
+    #about-us .robot {
+        transform: scale(0.7);
+    }
+    
+    #about-us .info-block {
+        padding: 1rem;
+    }
+    
+    #about-us .thought-bubble {
+        max-width: 220px;
+        padding: 0.7rem 1rem;
+    }
+    
+    #about-us .contact-btn {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-height: 700px) {
+    #about-us .main-title {
+        padding: 1rem 0 0.5rem;
+    }
+    
+    #about-us .content-grid {
+        padding: 0.5rem 0 1rem;
+    }
+    
+    #about-us .robot {
+        transform: scale(0.8);
+    }
+    
+    #about-us .company-info {
+        gap: 1.5rem;
+    }
+    
+    #about-us .info-block {
+        padding: 1.2rem;
+    }
+}
+
 /* Load More Button */
 .load-more-container {
 text-align: center;
