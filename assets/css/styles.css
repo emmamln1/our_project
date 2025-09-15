@@ -2561,6 +2561,15 @@ border-color: var(--secondary-pink);
     .projects-grid {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 1.5rem;
+        padding: 0 30px;
+    }
+    
+    .project-card {
+        height: 400px;
+    }
+    
+    .project-card-content {
+        padding: 1.5rem;
     }
     
     .tech-filter {
@@ -2570,6 +2579,12 @@ border-color: var(--secondary-pink);
     .filter-btn {
         padding: 0.6rem 1.2rem;
         font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        padding: 0 25px;
     }
 }
 
@@ -4057,11 +4072,11 @@ border-color: var(--secondary-pink);
 .contact-icon svg {
     width: 100%;
     height: 100%;
-    stroke-width: 2;
+    stroke-width: 1;
 }
 
 .contact-text {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     opacity: 0.95;
 }
@@ -4074,7 +4089,7 @@ border-color: var(--secondary-pink);
 
 .card-number {
     font-family: 'Courier New', monospace;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     letter-spacing: 2px;
     opacity: 0.9;
@@ -4384,10 +4399,31 @@ border-color: var(--secondary-pink);
     }
 }
 
+@media (max-width: 1024px) {
+    .contact-content {
+        padding: 0 30px;
+    }
+    
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 30px;
+    }
+}
+
 @media (max-width: 900px) {
     .blog-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
+        padding: 0 25px;
+    }
+    
+    .contact-content {
+        padding: 0 25px;
+    }
+    
+    .contact-card {
+        width: calc(100vw - 100px);
+        max-width: 350px;
     }
     
     .contact-content {
@@ -4395,9 +4431,20 @@ border-color: var(--secondary-pink);
         gap: 50px;
     }
     
-    .contact-card {
-        width: 320px;
-        height: 200px;
+    .logo-text {
+        font-size: 16px;
+    }
+    
+    .logo-subtitle {
+        font-size: 12px;
+    }
+    
+    .contact-text {
+        font-size: 11px;
+    }
+    
+    .card-brand {
+        font-size: 11px;
     }
     
     .form-container {
@@ -4408,6 +4455,19 @@ border-color: var(--secondary-pink);
 @media (max-width: 768px) {
     .blog-section {
         padding: 60px 0;
+    }
+    
+    .blog-grid {
+        padding: 0 20px;
+    }
+    
+    .contact-content {
+        padding: 0 20px;
+    }
+    
+    .contact-card {
+        width: calc(100vw - 80px);
+        max-width: 320px;
     }
     
     /* Contact Card Mobile Adjustments */
@@ -4519,6 +4579,16 @@ border-color: var(--secondary-pink);
     
     .blog-grid {
         gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .contact-content {
+        padding: 0 15px;
+    }
+    
+    .contact-card {
+        width: calc(100vw - 60px);
+        max-width: 300px;
     }
     
     .blog-card-image {
