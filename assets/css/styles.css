@@ -4414,6 +4414,47 @@ border-color: var(--secondary-pink);
         padding: 60px 0;
     }
     
+    /* Contact Card Mobile Adjustments */
+    .logo-text {
+        font-size: 18px;
+    }
+    
+    .logo-subtitle {
+        font-size: 11px;
+    }
+    
+    .card-chip {
+        width: 32px;
+        height: 24px;
+    }
+    
+    .contact-details {
+        gap: 12px;
+        margin: 15px 0;
+    }
+    
+    .contact-item {
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .contact-text {
+        font-size: 13px;
+    }
+    
+    .card-number {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+    
+    .card-brand {
+        font-size: 10px;
+    }
+    
     .blog-header .section-title {
         font-size: 2.5rem;
     }
