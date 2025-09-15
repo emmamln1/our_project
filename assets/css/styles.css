@@ -29,7 +29,7 @@
     --text-glow: #D811F0;
 
     /* Spacing */
-    --container-padding: 0 80px;
+    /* --container-padding: 0 80px; */
 
     /* Transitions */
     --transition-fast: 0.2s ease;
@@ -54,6 +54,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    /* padding: 0 40px; */
 }
 
 /* Custom Animations */
@@ -133,9 +134,7 @@ body {
 .section {
     min-height: 100vh;
     padding: 4rem 0;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark) 100%);
     scroll-margin-top: 80px;
 }
@@ -854,7 +853,6 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     perspective: 1000px;
-    max-width: 1600px;
     margin: 0 auto;
     width: 100%;
 }
@@ -2032,8 +2030,6 @@ body {
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     padding: 1rem 0 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
 }
 
