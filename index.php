@@ -173,11 +173,116 @@
             </div>
         </section>
         
-        <!-- Why Us Section -->
-        <section id="why-us" class="section why-us-section">
-            <div class="container">
-                <h2>Why Choose Us</h2>
-                <p>Experience the difference with our futuristic solutions</p>
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="section why-choose-us-section">
+            <div class="why-choose-us-container">
+                <h1 class="main-title">Why Choose Us</h1>
+                
+                <div class="advantages-grid">
+                    <!-- Advantage 1: Fast Delivery -->
+                    <div class="advantage-card" data-index="0">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">Fast Delivery</h3>
+                            <p class="advantage-description">Lightning-fast project completion with optimized workflows and dedicated resources</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 2: 24/7 Support -->
+                    <div class="advantage-card" data-index="1">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">24/7 Support</h3>
+                            <p class="advantage-description">Round-the-clock assistance ensuring your projects never face downtime or delays</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 3: Expert Team -->
+                    <div class="advantage-card" data-index="2">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">Expert Team</h3>
+                            <p class="advantage-description">Seasoned professionals with cutting-edge skills and industry expertise</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 4: Cutting-Edge Tech -->
+                    <div class="advantage-card" data-index="3">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">Cutting-Edge Tech</h3>
+                            <p class="advantage-description">Latest technologies and frameworks ensuring future-proof solutions</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 5: Scalable Solutions -->
+                    <div class="advantage-card" data-index="4">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">Scalable Solutions</h3>
+                            <p class="advantage-description">Architecture designed to grow with your business needs and demands</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+
+                    <!-- Advantage 6: Proven Results -->
+                    <div class="advantage-card" data-index="5">
+                        <div class="card-inner">
+                            <div class="icon-container">
+                                <div class="icon-glow"></div>
+                                <svg class="advantage-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="advantage-title">Proven Results</h3>
+                            <p class="advantage-description">Track record of successful projects and satisfied clients across industries</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Background Elements -->
+                <div class="floating-bg-elements">
+                    <div class="bg-element element-1"></div>
+                    <div class="bg-element element-2"></div>
+                    <div class="bg-element element-3"></div>
+                    <div class="bg-element element-4"></div>
+                </div>
             </div>
         </section>
 
