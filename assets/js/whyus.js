@@ -143,7 +143,7 @@ class WhyChooseUsAnimations {
         
         if (isHover) {
             // Enhanced hover state
-            cardInner.style.transform = 'translateY(-15px) scale(1.08)';
+            cardInner.style.transform = 'translateY(-15px) scale(1)';
             cardInner.style.boxShadow = '0 25px 80px rgba(0, 203, 250, 0.4), 0 0 60px rgba(88, 30, 184, 0.3)';
             
             // Text animations

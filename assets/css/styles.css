@@ -4831,12 +4831,10 @@ border-color: var(--secondary-pink);
 #footer .contact-items {
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 #footer .contact-item {
     display: flex;
-    align-items: flex-start;
     gap: 15px;
 }
 

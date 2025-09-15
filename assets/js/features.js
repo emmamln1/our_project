@@ -65,7 +65,7 @@ class InteractiveFeaturesSection {
     enhanceCardAnimation(card) {
         // Add subtle entrance glow
         setTimeout(() => {
-            card.style.boxShadow = '0 0 30px rgba(88, 30, 184, 0.2)';
+            // card.style.boxShadow = '0 0 30px rgba(88, 30, 184, 0.2)';
             setTimeout(() => {
                 card.style.boxShadow = '';
             }, 1000);
@@ -120,7 +120,7 @@ class InteractiveFeaturesSection {
         if (isHovering) {
             // Enhanced hover effects
             card.style.transform = 'translateY(-10px) scale(1.02)';
-            card.style.boxShadow = '0 20px 60px rgba(88, 30, 184, 0.3), 0 0 40px rgba(0, 203, 250, 0.2)';
+            // card.style.boxShadow = '0 20px 60px rgba(88, 30, 184, 0.3), 0 0 40px rgba(0, 203, 250, 0.2)';
             
             if (icon) {
                 icon.style.transform = 'scale(1.1) rotate(360deg)';
@@ -141,7 +141,7 @@ class InteractiveFeaturesSection {
             
             if (icon) {
                 icon.style.transform = 'scale(1) rotate(0deg)';
-                icon.style.boxShadow = '0 0 30px rgba(88, 30, 184, 0.5)';
+                // icon.style.boxShadow = '0 0 30px rgba(88, 30, 184, 0.5)';
             }
 
             if (flipIndicator) {
