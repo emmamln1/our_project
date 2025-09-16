@@ -165,7 +165,7 @@
         <div class="footer-bottom">
             <div class="footer-bottom-content">
                 <div class="copyright">
-                    <span data-lang-key="footer.copyright">© 2024 LandingCraft Pro. Բոլոր իրավունքները պաշտպանված են:</span>
+                    <span data-lang-key="footer.copyright">© 2025 LandingCraft Pro. Բոլոր իրավունքները պաշտպանված են:</span>
                 </div>
                 <div class="footer-bottom-links">
                     <a href="#" class="footer-bottom-link" data-lang-key="footer.privacy">Գաղտնիության Քաղաքականություն</a>

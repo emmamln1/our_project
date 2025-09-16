@@ -1266,7 +1266,6 @@
                                     </svg>
                                 </div>
                                 <div class="info-content">
-                                    <span class="info-label" data-lang-key="contact.phone">Հեռախոս</span>
                                     <a href="tel:+374XXXXXXX" class="info-value">+374 XX XXX XXX</a>
                                 </div>
                             </div>
@@ -1279,7 +1278,6 @@
                                     </svg>
                                 </div>
                                 <div class="info-content">
-                                    <span class="info-label" data-lang-key="contact.email">Էլ. հասցե</span>
                                     <a href="mailto:info@landingcraft.pro" class="info-value">info@landingcraft.pro</a>
                                 </div>
                             </div>
