@@ -133,7 +133,7 @@ body {
 
 .section {
     min-height: 100vh;
-    padding: 4rem 0;
+    padding: 10px 0;
     align-items: center;
     background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark) 100%);
     scroll-margin-top: 80px;
@@ -174,7 +174,6 @@ body {
     position: relative;
     background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark-secondary) 30%, var(--bg-black) 100%);
     overflow: hidden;
-    padding: 6rem 0;
 }
 
 /* Background Effects */
@@ -537,7 +536,6 @@ body {
 
 /* Interactive Features Section */
 #features {
-    padding: 6rem 0;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(88, 30, 184, 0.08) 50%, rgba(0, 0, 0, 0.95) 100%);
     position: relative;
     overflow: hidden;
@@ -3229,7 +3227,6 @@ border-color: var(--secondary-pink);
 
 /* ===== BLOG SECTION ===== */
 .blog-section {
-    padding: 100px 0;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a0d2e 50%, #0a0a0a 100%);
     position: relative;
     overflow: hidden;
@@ -3639,7 +3636,6 @@ border-color: var(--secondary-pink);
 
 /* Contact Section Styles */
 .contact-section {
-    padding: 100px 0;
     background: var(--bg-primary);
     position: relative;
     overflow: hidden;
