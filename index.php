@@ -92,7 +92,7 @@
         <!-- About Us Section -->
         <section id="about-us" class="section about-us-section">
             <div class="about-us-container">
-                <h1 class="main-title">Մեր մասին</h1>
+                <h2 class="section-title">Մեր մասին</h2>
                 
                 <div class="content-grid">
                     <!-- Left Side: Company Information -->
@@ -178,7 +178,7 @@
         <!-- Why Choose Us Section -->
         <section id="why-choose-us" class="section why-choose-us-section">
             <div class="why-choose-us-container">
-                <h1 class="main-title">Ինչու՞ ընտրել մեզ</h1>
+                <h2 class="section-title">Ինչու՞ ընտրել մեզ</h2>
                 
                 <div class="advantages-grid">
                     <!-- Advantage 1: Fast Delivery -->
