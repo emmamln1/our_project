@@ -12,10 +12,10 @@
         <nav class="nav-menu" role="navigation" aria-label="Main navigation">
             <ul class="nav-list" id="navList">
                 <li class="nav-item">
-                    <a href="#about" class="nav-link" data-translate="nav-about">About Us</a>
+                    <a href="#about-us" class="nav-link" data-translate="nav-about">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#why-us" class="nav-link" data-translate="nav-why-us">Why Us</a>
+                    <a href="#why-choose-us" class="nav-link" data-translate="nav-why-us">Why Us</a>
                 </li>
                 <li class="nav-item">
                     <a href="#features" class="nav-link" data-translate="nav-features">Features</a>
@@ -84,10 +84,10 @@
             <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
                 <ul class="mobile-nav-list">
                     <li class="mobile-nav-item">
-                        <a href="#about" class="mobile-nav-link" data-translate="nav-about">About Us</a>
+                        <a href="#about-us" class="mobile-nav-link" data-translate="nav-about">About Us</a>
                     </li>
                     <li class="mobile-nav-item">
-                        <a href="#why-us" class="mobile-nav-link" data-translate="nav-why-us">Why Us</a>
+                        <a href="#why-choose-us" class="mobile-nav-link" data-translate="nav-why-us">Why Us</a>
                     </li>
                     <li class="mobile-nav-item">
                         <a href="#blog" class="mobile-nav-link" data-translate="nav-blog">Blog</a>
