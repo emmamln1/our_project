@@ -8,6 +8,8 @@
     <meta name="keywords" content="landing pages, web development, responsive design, multilingual websites">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/hero.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -90,7 +92,7 @@
         <!-- About Us Section -->
         <section id="about-us" class="section about-us-section">
             <div class="about-us-container">
-                <h1 class="main-title">About Us</h1>
+                <h1 class="main-title">Մեր մասին</h1>
                 
                 <div class="content-grid">
                     <!-- Left Side: Company Information -->
@@ -176,7 +178,7 @@
         <!-- Why Choose Us Section -->
         <section id="why-choose-us" class="section why-choose-us-section">
             <div class="why-choose-us-container">
-                <h1 class="main-title">Why Choose Us</h1>
+                <h1 class="main-title">Ինչու՞ ընտրել մեզ</h1>
                 
                 <div class="advantages-grid">
                     <!-- Advantage 1: Fast Delivery -->
