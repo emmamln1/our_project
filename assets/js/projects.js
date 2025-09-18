@@ -654,7 +654,7 @@ class ProjectsController {
         this.updateButtonVisibility();
 
         // Add scroll animations
-        this.addScrollAnimations();
+        this.animateProjectCards();
     }
 
     /**

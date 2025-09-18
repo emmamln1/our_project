@@ -77,7 +77,16 @@ class BlogManager {
         const blogCard = button.closest('.blog-card');
         const title = blogCard.querySelector('.blog-card-title').textContent;
         const date = blogCard.querySelector('.blog-date').textContent;
-        return btoa(title + date).replace(/[^a-zA-Z0-9]/g, '').substring(0, 10);
+        
+        // Use a simple hash function instead of btoa to avoid encoding issues
+        let hash = 0;
+        const str = title + date;
+        for (let i = 0; i < str.length; i++) {
+            const char = str.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32bit integer
+        }
+        return Math.abs(hash).toString(36).substring(0, 10);
     }
 
     loadLikedStates() {
