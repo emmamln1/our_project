@@ -3593,13 +3593,40 @@ border-color: var(--secondary-pink);
     overflow: hidden;
 }
 
+.blog-close-btn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
 .load-more-btn {
     background: linear-gradient(135deg, #581EB8, #D811F0);
     box-shadow: 0 10px 30px rgba(88, 30, 184, 0.4);
 }
 
+.blog-close-btn {
+    background: linear-gradient(135deg, #D811F0, #581EB8);
+    box-shadow: 0 10px 30px rgba(216, 17, 240, 0.4);
+}
 
 .load-more-btn::before {
+    content: '';
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.blog-close-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -3614,12 +3641,21 @@ border-color: var(--secondary-pink);
     left: 100%;
 }
 
+.blog-close-btn:hover::before {
+    left: 100%;
+}
+
 .load-more-btn:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 20px 40px rgba(88, 30, 184, 0.6),
                 0 0 60px rgba(216, 17, 240, 0.4);
 }
 
+.blog-close-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(216, 17, 240, 0.6),
+                0 0 60px rgba(88, 30, 184, 0.4);
+}
 
 .load-more-btn svg {
     width: 20px;
@@ -3628,8 +3664,21 @@ border-color: var(--secondary-pink);
     stroke-width: 2;
 }
 
+.blog-close-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    stroke-width: 2;
+    vertical-align: middle;
+    align-self: center;
+}
+
 .load-more-btn:hover svg {
     transform: translateY(2px);
+}
+
+.blog-close-btn:hover svg {
+    transform: rotate(90deg);
 }
 
 
@@ -4286,6 +4335,11 @@ border-color: var(--secondary-pink);
     }
     
     .load-more-btn {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+    
+    .blog-close-btn {
         padding: 14px 28px;
         font-size: 0.9rem;
     }

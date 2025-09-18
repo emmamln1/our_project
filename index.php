@@ -764,6 +764,12 @@
                             <path d="M12 5v14M5 12l7 7 7-7"></path>
                         </svg>
                     </button>
+                    <button class="blog-close-btn" id="blogCloseBtn" style="display: none;">
+                        <span>Փակել</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M18 6L6 18M6 6l12 12"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
