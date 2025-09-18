@@ -3994,7 +3994,7 @@ border-color: var(--secondary-pink);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(88, 30, 184, 0.2);
     border-radius: 20px;
-    padding: 20px 40px 0 40px;
+    padding: 20px 40px 20px 40px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     height: 100%;
     display: flex;
