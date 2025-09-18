@@ -200,7 +200,7 @@ class WhyChooseUsAnimations {
         cardInner.style.transform = 'translateY(-15px) scale(0.95)';
         
         setTimeout(() => {
-            cardInner.style.transform = 'translateY(-15px) scale(1.08)';
+            cardInner.style.transform = 'translateY(-15px)';
         }, 150);
         
         // Create expanding circle effect
