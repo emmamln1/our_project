@@ -133,7 +133,7 @@ body {
 
 .section {
     min-height: 100vh;
-    padding: 10px 0;
+    padding: 3rem 80px;
     align-items: center;
     background: linear-gradient(135deg, var(--bg-black) 0%, var(--bg-dark) 100%);
     scroll-margin-top: 80px;
@@ -1143,7 +1143,7 @@ body {
 /* About Us Section */
 #about-us {
     height: 100vh;
-    padding: 0 40px;
+    padding: 3rem 80px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(88, 30, 184, 0.08) 50%, rgba(0, 0, 0, 0.95) 100%);
     position: relative;
     overflow: hidden;
@@ -1674,7 +1674,7 @@ body {
 /* Why Choose Us Section */
 #why-choose-us {
     height: 100vh;
-    padding: 0 40px;
+    padding: 3rem 80px;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(88, 30, 184, 0.08) 50%, rgba(0, 0, 0, 0.95) 100%);
     position: relative;
     overflow: hidden;
@@ -2961,7 +2961,6 @@ border-color: var(--secondary-pink);
 
 /* ===== TESTIMONIALS SECTION ===== */
 .reviews-section {
-    padding: 0 0 30px 0 !important;
     background: linear-gradient(135deg, #0a0a0a 0%, #1a0d2e 50%, #0a0a0a 100%);
     position: relative;
     overflow: hidden;
