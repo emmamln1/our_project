@@ -18,7 +18,7 @@
     z-index: 1000;
     transition: all var(--transition-medium);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    padding: 0 40px;
+    padding: 0 80px;
 }
 
 .header.scrolled {
