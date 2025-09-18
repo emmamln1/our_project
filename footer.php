@@ -108,7 +108,6 @@
                             </svg>
                         </div>
                         <div class="contact-details">
-                            <span class="contact-label" data-lang-key="footer.address">Հասցե:</span>
                             <span class="contact-value">Երևան, Հայաստան</span>
                         </div>
                     </div>
@@ -119,7 +118,6 @@
                             </svg>
                         </div>
                         <div class="contact-details">
-                            <span class="contact-label" data-lang-key="footer.phone">Հեռախոս:</span>
                             <span class="contact-value">+374 XX XXX XXX</span>
                         </div>
                     </div>
@@ -131,7 +129,6 @@
                             </svg>
                         </div>
                         <div class="contact-details">
-                            <span class="contact-label" data-lang-key="footer.email">Էլ. հասցե:</span>
                             <span class="contact-value">info@landingcraft.pro</span>
                         </div>
                     </div>
