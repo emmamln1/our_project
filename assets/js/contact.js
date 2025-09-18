@@ -243,14 +243,6 @@ class ContactController {
         this.contactCard.addEventListener('mouseleave', () => {
             this.contactCard.style.transform = '';
         });
-
-        // Click animation
-        this.contactCard.addEventListener('click', () => {
-            this.contactCard.style.transform = 'perspective(1000px) rotateY(180deg)';
-            setTimeout(() => {
-                this.contactCard.style.transform = '';
-            }, 600);
-        });
     }
 
     setupScrollAnimations() {
