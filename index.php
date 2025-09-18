@@ -1143,6 +1143,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"LandingCraft Pro-ն փոխակերպեց մեր բիզնեսը: Նրանց ապագայական մոտեցումը և նորարարական լուծումները մեզ օգնեցին հասնել նոր բարձունքների:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Ջոն Սմիթ</p>
                                 <p class="customer-title">Տեխնոլոգիական ընկերության CEO</p>
                             </div>
@@ -1154,6 +1161,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"Անհավատալի արդյունք: Մեր վեբկայքի վերափոխումը բերեց 300% ավելի շատ հաճախորդներ: Խորհուրդ եմ տալիս բոլորին:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Սարա Ջոնսոն</p>
                                 <p class="customer-title">Մարքեթինգի տնօրեն</p>
                             </div>
@@ -1165,6 +1179,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"Պրոֆեսիոնալ թիմ, որակյալ աշխատանք և գերազանց արդյունք: Նրանք իսկապես հասկանում են, թե ինչպես ստեղծել ապագայական դիզայն:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Մայքլ Չեն</p>
                                 <p class="customer-title">Ստարտափի հիմնադիր</p>
                             </div>
@@ -1176,6 +1197,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"LandingCraft Pro-ի հետ աշխատելը իսկական հաճույք էր: Նրանք ոչ միայն ստեղծեցին գեղեցիկ կայք, այլև ապահովեցին բարձր կատարողականություն:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Էմիլի Ռոդրիգես</p>
                                 <p class="customer-title">Էլեկտրոնային առևտրի մասնագետ</p>
                             </div>
@@ -1187,6 +1215,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"Գերազանց փորձ սկսից մինչև վերջ: Թիմը շատ ուշադիր էր մանրուքների նկատմամբ և ապահովեց բոլոր մեր պահանջները:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Դեյվիդ Պարկ</p>
                                 <p class="customer-title">Ծրագրային ապահովման ճարտարապետ</p>
                             </div>
@@ -1198,6 +1233,13 @@
                             </div>
                             <div class="carousel__item-body">
                                 <p class="review-text">"Նրանց ստեղծագործական մոտեցումը և տեխնիկական գիտելիքները կատարյալ համադրություն են: Մեր նոր կայքը իսկապես առանձնանում է:"</p>
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
                                 <p class="customer-name">Լիսա Թոմսոն</p>
                                 <p class="customer-title">Դիզայնի ստուդիայի սեփականատեր</p>
                             </div>
