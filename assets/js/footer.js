@@ -245,8 +245,8 @@ function showNotification(message, type = 'info') {
 }
 
 // Add CSS animations for ripple effect
-const style = document.createElement('style');
-style.textContent = `
+const footerStyle = document.createElement('style');
+footerStyle.textContent = `
     @keyframes rippleEffect {
         0% {
             width: 0;
@@ -269,4 +269,4 @@ style.textContent = `
         overflow: hidden;
     }
 `;
-document.head.appendChild(style);
+document.head.appendChild(footerStyle);

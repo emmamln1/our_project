@@ -77,7 +77,16 @@ class BlogManager {
         const blogCard = button.closest('.blog-card');
         const title = blogCard.querySelector('.blog-card-title').textContent;
         const date = blogCard.querySelector('.blog-date').textContent;
-        return btoa(title + date).replace(/[^a-zA-Z0-9]/g, '').substring(0, 10);
+        
+        // Use a simple hash function instead of btoa to avoid encoding issues
+        let hash = 0;
+        const str = title + date;
+        for (let i = 0; i < str.length; i++) {
+            const char = str.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32bit integer
+        }
+        return Math.abs(hash).toString(36).substring(0, 10);
     }
 
     loadLikedStates() {
@@ -174,9 +183,17 @@ class BlogManager {
 
     initializeLoadMore() {
         const loadMoreBtn = document.getElementById('blogLoadMoreBtn');
+        const closeBtn = document.getElementById('blogCloseBtn');
+        
         if (loadMoreBtn) {
             loadMoreBtn.addEventListener('click', () => {
                 this.loadMorePosts();
+            });
+        }
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                this.closeBlogPosts();
             });
         }
     }
@@ -192,9 +209,13 @@ class BlogManager {
 
     loadMorePosts() {
         const loadMoreBtn = document.getElementById('blogLoadMoreBtn');
+        const closeBtn = document.getElementById('blogCloseBtn');
         const blogGrid = document.getElementById('blogGrid');
         
         // Show loading state
+        loadMoreBtn.style.setProperty('display', 'flex', 'important');
+        loadMoreBtn.style.setProperty('align-items', 'center', 'important');
+        loadMoreBtn.style.setProperty('gap', '10px', 'important');
         loadMoreBtn.innerHTML = `
             <div class="loading-spinner"></div>
             <span>Բեռնում...</span>
@@ -213,6 +234,8 @@ class BlogManager {
                     border-top: 2px solid white;
                     border-radius: 50%;
                     animation: spin 1s linear infinite;
+                    display: inline-block;
+                    flex-shrink: 0;
                 }
                 @keyframes spin {
                     0% { transform: rotate(0deg); }
@@ -245,6 +268,9 @@ class BlogManager {
             this.initializeLikeButtons();
 
             // Reset button
+            loadMoreBtn.style.setProperty('display', 'flex', 'important');
+            loadMoreBtn.style.setProperty('align-items', 'center', 'important');
+            loadMoreBtn.style.setProperty('gap', '10px', 'important');
             loadMoreBtn.innerHTML = `
                 <span>Ավելի շատ բեռնել</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -255,11 +281,56 @@ class BlogManager {
 
             this.currentPage++;
             
+            // Show close button after loading more posts
+            if (closeBtn) {
+                closeBtn.style.display = 'block';
+            }
+            
             // Hide load more button after loading 3 pages
             if (this.currentPage >= 3) {
                 loadMoreBtn.style.display = 'none';
             }
         }, 1500);
+    }
+
+    closeBlogPosts() {
+        const loadMoreBtn = document.getElementById('blogLoadMoreBtn');
+        const closeBtn = document.getElementById('blogCloseBtn');
+        const blogGrid = document.getElementById('blogGrid');
+        
+        // Restore initial blog content
+        if (blogGrid && this.initialBlogContent) {
+            blogGrid.innerHTML = this.initialBlogContent;
+        }
+        
+        // Reset current page
+        this.currentPage = this.initialCurrentPage || 1;
+        
+        // Hide close button
+        if (closeBtn) {
+            closeBtn.style.display = 'none';
+        }
+        
+        // Show load more button
+        if (loadMoreBtn) {
+            loadMoreBtn.style.setProperty('display', 'flex', 'important');
+            loadMoreBtn.style.setProperty('align-items', 'center', 'important');
+            loadMoreBtn.style.setProperty('gap', '10px', 'important');
+            loadMoreBtn.innerHTML = `
+                <span>Ավելի շատ բեռնել</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 5v14M5 12l7 7 7-7"></path>
+                </svg>
+            `;
+            loadMoreBtn.disabled = false;
+        }
+        
+        // Re-initialize like buttons for original posts
+        this.initializeLikeButtons();
+        this.loadLikedStates();
+        
+        // Re-initialize animations for original posts
+        this.initializeAnimations();
     }
 
     generateMorePosts() {
