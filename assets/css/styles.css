@@ -4049,9 +4049,10 @@ border-color: var(--secondary-pink);
 }
 
 .form-textarea {
-    resize: vertical;
+    resize: none;
     min-height: 60px;
     font-family: 'Inter', sans-serif;
+    overflow: hidden;
 }
 
 .form-input:focus {
