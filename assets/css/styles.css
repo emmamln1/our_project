@@ -576,7 +576,7 @@ body {
 }
 
 #features .feature-card {
-    height: 380px;
+    height: 300px;
     position: relative;
     cursor: pointer;
     opacity: 0;
@@ -697,8 +697,8 @@ body {
 }
 
 #features .demo-video {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -736,7 +736,7 @@ body {
 
 #features .animation-dots {
     position: absolute;
-    bottom: -30px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -4340,7 +4340,7 @@ border-color: var(--secondary-pink);
     
     .contact-card {
         width: calc(100vw - 60px);
-        max-width: 300px;
+        max-width: 400px;
     }
     
     .blog-card-image {
